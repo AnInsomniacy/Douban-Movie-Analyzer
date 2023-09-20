@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>影像智库:电影数据分析系统</title>
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+    <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i%7CRaleway:300,300i,400,400i,600,600i,700,700i,900]"
+          rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/venobox/venobox.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{% static 'assets/css/freestyle.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<!-- ======= Header ======= -->
+<header id="header">
+    <div class="container">
+
+        <div class="logo float-left">
+            <h1 class="text-light"><a href="/aboutMe"><span>LZT</span></a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="temp.html"><img src="static/assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        </div>
+
+        <nav class="nav-menu float-right d-none d-lg-block">
+            <ul>
+                <li><a href="/">首页<i class="la la-angle-down"></i></a></li>
+                <li><a href="/database">电影数据库</a></li>
+                <li><a href="/dynamic_graph">动态图形分析</a></li>
+                <li><a href="/static_graph">静态图形分析</a></li>
+                <li><a href="/wordcloud_center">词云图</a></li>
+                <li class="active"><a href="/spider">爬虫</a></li>
+                <li><a href="/aboutMe">关于我</a></li>
+
+            </ul>
+        </nav><!-- .nav-menu -->
+
+    </div>
+</header><!-- End Header -->
+
+<!-- ======= Our Team Section ======= -->
+<section id="team" class="team">
+    <div class="container">
+
+        <div style="color:#FF5151" class="section-title">
+            <h2>影像智库:电影数据分析系统</h2>
+            <p>采用django框架、Python语言、worldcloud、pychart、plt等组件综合实现</p>
+            <p>开发人员:李泽涛 学号:20202132034 2020级华南师范大学计算机学院网络工程2班</p>
+        </div>
+
+
+        <div style="text-align: center;">
+            <button id="spider-btn"
+                    style="width: 200px; height: 60px;
+                   background: linear-gradient(to right, #FFED99, #FED976);
+                   border: none;
+                   border-radius: 4px;
+                   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                   color: #FA2C2C;">
+                执行爬虫
+            </button>
+        </div>
+
+        <div style="margin-top: 20px; text-align: center;">
+    <textarea id="spider-output" rows="10" cols="50"
+              style="width: 60%; height: 200px;
+                     background: linear-gradient(to right, #FFED99, #FED976);
+                     border: none;
+                     border-radius: 4px;
+                     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                     color: #333;
+                     padding: 10px;" readonly>
+    </textarea>
+        </div>
+
+
+        <script>
+            document.getElementById('spider-btn').onclick = function () {
+                document.getElementById('spider-output').value = '开始执行'
+            }
+        </script>
+
+
+    </div>
+
+</section><!-- End Our Team Section -->
+
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+
+    <div class="container">
+        <div class="copyright">
+            &copy; Copyright <strong><span>LZT</span></strong>. All Rights Reserved
+        </div>
+
+    </div>
+</footer><!-- End Footer -->
+
+<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="{% static 'assets/vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'assets/vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+<script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+<script src="{% static 'assets/vendor/jquery-sticky/jquery.sticky.js' %}"></script>
+<script src="{% static 'assets/vendor/venobox/venobox.min.js' %}"></script>
+<script src="{% static 'assets/vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'assets/vendor/counterup/counterup.min.js' %}"></script>
+<script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+
+<!-- Template Main JS File -->
+<script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

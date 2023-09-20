@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>电影类型分布</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+
+</head>
+<body >
+    <div id="baba452c90024e1192a7602a3b7ecc30" class="chart-container" style="width:900px; height:500px; "></div>
+    <script>
+        var chart_baba452c90024e1192a7602a3b7ecc30 = echarts.init(
+            document.getElementById('baba452c90024e1192a7602a3b7ecc30'), 'white', {renderer: 'canvas'});
+        var option_baba452c90024e1192a7602a3b7ecc30 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "treemap",
+            "name": "\u7535\u5f71\u7c7b\u578b",
+            "data": [
+                {
+                    "value": 186,
+                    "name": "\u5267\u60c5"
+                },
+                {
+                    "value": 42,
+                    "name": "\u72af\u7f6a"
+                },
+                {
+                    "value": 58,
+                    "name": "\u7231\u60c5"
+                },
+                {
+                    "value": 8,
+                    "name": "\u540c\u6027"
+                },
+                {
+                    "value": 2,
+                    "name": "\u707e\u96be"
+                },
+                {
+                    "value": 30,
+                    "name": "\u52a8\u4f5c"
+                },
+                {
+                    "value": 52,
+                    "name": "\u559c\u5267"
+                },
+                {
+                    "value": 15,
+                    "name": "\u6218\u4e89"
+                },
+                {
+                    "value": 37,
+                    "name": "\u52a8\u753b"
+                },
+                {
+                    "value": 43,
+                    "name": "\u5947\u5e7b"
+                },
+                {
+                    "value": 8,
+                    "name": "\u5386\u53f2"
+                },
+                {
+                    "value": 23,
+                    "name": "\u79d1\u5e7b"
+                },
+                {
+                    "value": 49,
+                    "name": "\u5192\u9669"
+                },
+                {
+                    "value": 29,
+                    "name": "\u60ac\u7591"
+                },
+                {
+                    "value": 9,
+                    "name": "\u97f3\u4e50"
+                },
+                {
+                    "value": 6,
+                    "name": "\u6b4c\u821e"
+                },
+                {
+                    "value": 33,
+                    "name": "\u60ca\u609a"
+                },
+                {
+                    "value": 10,
+                    "name": "\u53e4\u88c5"
+                },
+                {
+                    "value": 20,
+                    "name": "\u5bb6\u5ead"
+                },
+                {
+                    "value": 15,
+                    "name": "\u4f20\u8bb0"
+                },
+                {
+                    "value": 2,
+                    "name": "\u8fd0\u52a8"
+                },
+                {
+                    "value": 3,
+                    "name": "\u897f\u90e8"
+                },
+                {
+                    "value": 2,
+                    "name": "\u60c5\u8272"
+                },
+                {
+                    "value": 4,
+                    "name": "\u513f\u7ae5"
+                },
+                {
+                    "value": 3,
+                    "name": "\u7eaa\u5f55\u7247"
+                },
+                {
+                    "value": 4,
+                    "name": "\u6b66\u4fa0"
+                },
+                {
+                    "value": 2,
+                    "name": "\u6050\u6016"
+                }
+            ],
+            "width": "80%",
+            "height": "80%",
+            "label": {
+                "show": true,
+                "position": "inside",
+                "margin": 8,
+                "fontSize": 15
+            },
+            "upperLabel": {
+                "show": true,
+                "position": "inside",
+                "margin": 8
+            },
+            "drillDownIcon": "\u25b6",
+            "roam": true,
+            "nodeClick": "zoomToNode",
+            "zoomToNodeRatio": 0.1024,
+            "colorMappingBy": "index",
+            "visibleMin": 10
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u7535\u5f71\u7c7b\u578b"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "title": [
+        {
+            "show": true,
+            "text": "\u7535\u5f71\u7c7b\u578b\u5206\u5e03(\u53ef\u70b9\u51fb\u5361\u7247\u4e92\u52a8)",
+            "target": "blank",
+            "subtarget": "blank",
+            "left": "center",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ]
+};
+        chart_baba452c90024e1192a7602a3b7ecc30.setOption(option_baba452c90024e1192a7602a3b7ecc30);
+    </script>
+</body>
+</html>

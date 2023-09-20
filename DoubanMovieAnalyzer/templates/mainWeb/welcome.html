@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>首页</title>
+    <style>
+        iframe {
+            width: 48%;
+            height: 600px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Views集合</h1>
+
+    <iframe src="{% url 'genres' %}"></iframe>
+    <iframe src="{% url 'areas' %}"></iframe>
+
+    <iframe src="{% url 'showtime' %}"></iframe>
+    <iframe src="{% url 'score_img' %}"></iframe>
+
+    <iframe src="{% url 'top_scores' %}"></iframe>
+    <iframe src="{% url 'top_comments' %}"></iframe>
+
+    <iframe src="{% url 'duration_analysis' %}"></iframe>
+    <iframe src="{% url 'search_urls' %}"></iframe>
+
+    <iframe src="{% url 'worldcloud_areas' %}"></iframe>
+    <iframe src="{% url 'worldcloud_genres' %}"></iframe>
+
+    <iframe src="{% url 'worldcloud_actor' %}"></iframe>
+</body>
+</html>
